@@ -6,6 +6,12 @@ This repository contains a collection of simple React projects that serve as exa
 
 1. **Cash Withdrawal App**
    - A simple app to simulate cash withdrawals with a predefined balance and various denominations.
+  
+2. **Destination Search Engine**
+   - An app that contains a search engine that filters out destinations based on what you type.
+     
+3. **Random Number Generator**
+   - An app that generates a random number between 1 and 100 every time you click the generate button.
 
 
 ## How to Run
