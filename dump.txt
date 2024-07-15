@@ -1,0 +1,209 @@
+import DestinationSearch from './components/DestinationSearch'
+
+import './App.css'
+
+const destinationsList = [
+  {
+    id: 1,
+    name: 'Melaka Mosque',
+    imgUrl: 'https://assets.ccbp.in/frontend/react-js/melaka-mosque-img.png',
+  },
+  {
+    id: 2,
+    name: 'Shrubland',
+    imgUrl: 'https://assets.ccbp.in/frontend/react-js/shrubland-img.png',
+  },
+  {
+    id: 3,
+    name: 'New York',
+    imgUrl: 'https://assets.ccbp.in/frontend/react-js/new-york-img.png',
+  },
+  {
+    id: 4,
+    name: 'Escarpment',
+    imgUrl: 'https://assets.ccbp.in/frontend/react-js/escarpment-img.png',
+  },
+  {
+    id: 5,
+    name: 'Westminster Abbey',
+    imgUrl:
+      'https://assets.ccbp.in/frontend/react-js/westminster-abbey-img.png',
+  },
+  {
+    id: 6,
+    name: 'South Downs National Park',
+    imgUrl:
+      'https://assets.ccbp.in/frontend/react-js/south-downs-national-park-img.png',
+  },
+  {
+    id: 7,
+    name: 'National Historic Site',
+    imgUrl:
+      'https://assets.ccbp.in/frontend/react-js/national-historic-site-img.png',
+  },
+  {
+    id: 8,
+    name: 'Tower Bridge',
+    imgUrl: 'https://assets.ccbp.in/frontend/react-js/tower-bridge-img.png',
+  },
+  {
+    id: 9,
+    name: 'Arc Here',
+    imgUrl: 'https://assets.ccbp.in/frontend/react-js/arc-here-img.png',
+  },
+  {
+    id: 10,
+    name: 'Steeple',
+    imgUrl: 'https://assets.ccbp.in/frontend/react-js/steeple-img.png',
+  },
+  {
+    id: 11,
+    name: 'Glaciokarst',
+    imgUrl: 'https://assets.ccbp.in/frontend/react-js/glaciokarst-img.png',
+  },
+  {
+    id: 12,
+    name: 'Parco Nazionale delle Cinque Terre',
+    imgUrl:
+      'https://assets.ccbp.in/frontend/react-js/parco-nazionale-delle-cinque-terre-img.png',
+  },
+]
+
+const App = () => <DestinationSearch destinationsList={destinationsList} />
+
+export default App
+
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+
+
+
+
+import React, {Component} from 'react'
+import DestinationItem from '../DestinationItem'
+import './index.css'
+
+class DestinationSearch extends Component {
+  state = {searchInput: ''}
+
+  onChangeSearchInput = event => {
+    this.setState({searchInput: event.target.value})
+  }
+
+  getFilteredDestinations = () => {
+    const {searchInput} = this.state
+    const {destinationsList} = this.props
+    return destinationsList.filter(destination =>
+      destination.name.toLowerCase().includes(searchInput.toLowerCase()),
+    )
+  }
+
+  render() {
+    const {searchInput} = this.state
+    const filteredDestinations = this.getFilteredDestinations()
+
+    return (
+      <div className="destination-search-container">
+        <h1 className="heading">Destination Search</h1>
+        <div className="search-container">
+          <input
+            type="search"
+            value={searchInput}
+            onChange={this.onChangeSearchInput}
+            className="search-input"
+            placeholder="Search"
+          />
+          <img
+            src="https://assets.ccbp.in/frontend/react-js/destinations-search-icon-img.png"
+            alt="search icon"
+            className="search-icon"
+          />
+        </div>
+        <ul className="destinations-list">
+          {filteredDestinations.map(destination => (
+            <DestinationItem key={destination.id} destination={destination} />
+          ))}
+        </ul>
+      </div>
+    )
+  }
+}
+
+export default DestinationSearch
+
+
+.destination-search-container {
+  text-align: center;
+  margin: 20px;
+}
+
+.heading {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.search-container {
+  margin-bottom: 20px;
+}
+
+.search-input {
+  padding: 10px;
+  font-size: 16px;
+  width: 80%;
+}
+
+.destinations-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+
+
+
+
+
+
+import React from 'react'
+import './index.css'
+
+const DestinationItem = ({destination}) => {
+  const {name, imgUrl} = destination
+  return (
+    <li className="destination-item">
+      <img src={imgUrl} alt={name} className="destination-image" />
+      <p className="destination-name">{name}</p>
+    </li>
+  )
+}
+
+export default DestinationItem
+
+.destination-item {
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+}
+
+.destination-image {
+  width: 100px;
+  height: 100px;
+  margin-right: 20px;
+}
+
+.destination-name {
+  font-size: 18px;
+}
+
