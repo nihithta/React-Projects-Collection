@@ -1,0 +1,15 @@
+.withdraw-button {
+    background-color: #4c4c94;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    width: 60px;
+    height: 30px;
+    margin: 5px;
+    cursor: pointer;
+    list-style-type: none;
+  }
+  
+  .withdraw-button:hover {
+    background-color: #6c63ff;
+  }
