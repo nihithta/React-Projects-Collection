@@ -7,7 +7,6 @@ This repository contains a collection of simple React projects that serve as exa
 1. **Cash Withdrawal App**
    - A simple app to simulate cash withdrawals with a predefined balance and various denominations.
 
-_(Add more projects as needed)_
 
 ## How to Run
 
