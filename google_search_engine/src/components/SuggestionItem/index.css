@@ -1,0 +1,18 @@
+.list-props {
+    list-style-type: none;
+    margin: 0;
+  }
+  
+  .list-item {
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+    margin: 0; /* Remove margin */
+  }
+  
+  .search-arrow {
+    height: 20px;
+    width: 20px;
+    align-self: center;
+  }
+  
