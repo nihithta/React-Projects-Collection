@@ -1,0 +1,22 @@
+.bg-container {
+    background: linear-gradient(to right, #1d976c, #93f9b9);
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    color: white;
+  }
+  
+  .details {
+    margin-left: 35px;
+  }
+  
+  .count-display {
+    background-color: white;
+    color: #1d976c;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
