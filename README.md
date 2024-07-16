@@ -4,13 +4,22 @@ This repository contains a collection of simple React projects that serve as exa
 
 ## Projects Included
 
-1. **Cash Withdrawal App**
+1. **Browser History Interface**
+   - An app that could display the past websites visited by the user. You can search the list and also delete items
+
+2. **Cash Withdrawal App**
    - A simple app to simulate cash withdrawals with a predefined balance and various denominations.
+
+3. **Character Count App**
+   - A simple app that returns the character count of your essays or any other text given to it.
+
+4. **Destination Search Engine**
+   - An app containing a search engine that filters out destinations based on what the user types.
   
-2. **Destination Search Engine**
-   - An app that contains a search engine that filters out destinations based on what you type.
+5. **Google Search Engine**
+   - A clone of the Google Search Engine page which also consists of a list of suggestions and autofill options.
      
-3. **Random Number Generator**
+6. **Random Number Generator**
    - An app that generates a random number between 1 and 100 every time you click the generate button.
 
 
