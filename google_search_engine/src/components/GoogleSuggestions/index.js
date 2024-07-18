@@ -1,65 +1,67 @@
 import {Component} from 'react'
-import './index.css'
 import SuggestionItem from '../SuggestionItem'
+import './index.css'
 
 class GoogleSuggestions extends Component {
   state = {
-    searchQuery: '',
+    searchInput: '',
   }
 
-  handleSearchChange = event => {
+  updateSearchInput = value => {
+    this.setState(() => ({
+      searchInput: value,
+    }))
+  }
+
+  onChangeSearchInput = event => {
     this.setState({
-      searchQuery: event.target.value,
+      searchInput: event.target.value,
     })
-  }
-
-  updateSearchQuery = suggestion => {
-    this.setState({
-      searchQuery: suggestion,
-    })
-  }
-
-  filteredResults = () => {
-    const {searchQuery} = this.state
-    const {suggestionsList} = this.props
-    return suggestionsList.filter(suggestion =>
-      suggestion.suggestion.toLowerCase().includes(searchQuery.toLowerCase()),
-    )
   }
 
   render() {
-    const {searchQuery} = this.state
-    const filteredSuggestions = this.filteredResults()
+    const {searchInput} = this.state
+    const {suggestionsList} = this.props
+    const searchResults = suggestionsList.filter(eachSuggestion =>
+      eachSuggestion.suggestion
+        .toLowerCase()
+        .includes(searchInput.toLowerCase()),
+    )
+
     return (
-      <div className="google-search-container">
-        <img
-          src="https://assets.ccbp.in/frontend/react-js/google-logo.png"
-          alt="google logo"
-          className="logo"
-        />
-        <div className="search-container">
+      <div className="app-container">
+        <div className="google-suggestions-container">
           <img
-            src="https://assets.ccbp.in/frontend/react-js/google-search-icon.png"
-            alt="search icon"
-            className="search-icon"
+            src="https://assets.ccbp.in/frontend/react-js/google-logo.png"
+            alt="google logo"
+            className="google-logo"
           />
-          <input
-            type="search"
-            onChange={this.handleSearchChange}
-            placeholder="Enter your search query..."
-            value={searchQuery}
-            className="search-input"
-          />
+          <div className="search-input-suggestions-container">
+            <div className="search-input-container">
+              <img
+                alt="search icon"
+                className="search-icon"
+                src="https://assets.ccbp.in/frontend/react-js/google-search-icon.png"
+              />
+              <input
+                type="search"
+                className="search-input"
+                placeholder="Search Google"
+                onChange={this.onChangeSearchInput}
+                value={searchInput}
+              />
+            </div>
+            <ul className="suggestions-list">
+              {searchResults.map(eachSuggestion => (
+                <SuggestionItem
+                  key={eachSuggestion.id}
+                  suggestionDetails={eachSuggestion}
+                  updateSearchInput={this.updateSearchInput}
+                />
+              ))}
+            </ul>
+          </div>
         </div>
-        <ul className="suggestions-list">
-          {filteredSuggestions.map(suggestion => (
-            <SuggestionItem
-              key={suggestion.id}
-              resultItem={suggestion}
-              updateSearchQuery={this.updateSearchQuery}
-            />
-          ))}
-        </ul>
       </div>
     )
   }

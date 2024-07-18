@@ -1,59 +1,113 @@
-.google-search-container {
+.app-container {
+  display: flex;
+  justify-content: center;
+}
+
+.google-suggestions-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 125px;
+}
+
+@media screen and (min-width: 768px) {
+  .google-suggestions-container {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    height: 100vh;
+    margin-top: 250px;
   }
-  
-  .search-container {
-    position: relative;
+}
+
+.google-logo {
+  width: 150px;
+  height: 55px;
+}
+
+@media screen and (min-width: 768px) {
+  .google-logo {
+    width: 432px;
+    height: 140px;
+  }
+}
+
+.search-input-suggestions-container {
+  width: 300px;
+  border-radius: 12px;
+  margin-top: 24px;
+  box-shadow: 0px 0px 10px 0px #bfbfbf;
+}
+
+@media screen and (min-width: 768px) {
+  .search-input-suggestions-container {
+    width: 600px;
+    border-radius: 20px;
+    margin-top: 48px;
+  }
+}
+
+.search-input-container {
+  display: flex;
+  align-items: center;
+  padding-top: 4px;
+  padding-left: 8px;
+  padding-bottom: 4px;
+  padding-right: 8px;
+}
+
+@media screen and (min-width: 768px) {
+  .search-input-container {
     display: flex;
     align-items: center;
-    width: 300px; /* Adjust width as needed */
+    padding-top: 4px;
+    padding-left: 12px;
+    padding-bottom: 4px;
+    padding-right: 12px;
   }
-  
+}
+
+.search-icon {
+  width: 16px;
+  height: 16px;
+}
+
+@media screen and (min-width: 768px) {
   .search-icon {
-    position: absolute;
-    left: 10px; /* Adjust position as needed */
-    width: 20px; /* Adjust size as needed */
-    height: 20px; /* Adjust size as needed */
+    width: 24px;
+    height: 24px;
   }
-  
+}
+
+.search-input {
+  color: #64748b;
+  font-family: 'Roboto';
+  font-size: 16px;
+  width: 100%;
+  height: 40px;
+  border: none;
+  margin-left: 16px;
+  outline: none;
+}
+
+@media screen and (min-width: 768px) {
   .search-input {
-    padding: 10px 30px 10px 40px; /* Adjust padding to accommodate icon */
-    font-size: 16px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    outline: none;
-    width: 100%;
-    border-bottom: none;
+    font-size: 20px;
+    height: 40px;
+    margin-left: 8px;
   }
-  
-  .search-button {
-    padding: 10px 20px;
-    font-size: 16px;
-    background-color: #007bff;
-    color: #fff;
-    border: 1px solid #007bff;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+}
+
+.suggestions-list {
+  padding-left: 12px;
+  padding-right: 16px;
+  padding-bottom: 12px;
+  margin: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .suggestions-list {
+    padding-left: 24px;
+    padding-right: 32px;
+    padding-bottom: 24px;
   }
-  
-  .search-button:hover {
-    background-color: #0056b3;
-  }
-  
-  .logo {
-    width: 30vw;
-  }
-  
-  .suggestion-list {
-    padding: 10px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    outline: none;
-    border-top: none;
-  }
+}

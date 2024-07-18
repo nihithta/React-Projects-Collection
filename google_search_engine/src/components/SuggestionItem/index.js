@@ -1,23 +1,27 @@
 import './index.css'
 
-const SuggestionItem = ({resultItem, updateSearchQuery}) => {
-  const {suggestion} = resultItem
+const SuggestionItem = props => {
+  const {suggestionDetails, updateSearchInput} = props
+  const {suggestion} = suggestionDetails
 
-  const handleArrowClick = () => {
-    updateSearchQuery(suggestion)
+  const onClickSuggestion = () => {
+    updateSearchInput(suggestion)
   }
 
   return (
-    <li className="list-props">
-      <div className="list-item">
-        <p>{suggestion}</p>
+    <li className="suggestion-item">
+      <p className="suggestion-text">{suggestion}</p>
+      <button
+        type="button"
+        className="arrow-button"
+        onClick={onClickSuggestion}
+      >
         <img
           src="https://assets.ccbp.in/frontend/react-js/diagonal-arrow-left-up.png"
           alt="arrow"
-          className="search-arrow"
-          onClick={handleArrowClick}
+          className="arrow"
         />
-      </div>
+      </button>
     </li>
   )
 }

@@ -1,18 +1,44 @@
-.list-props {
-    list-style-type: none;
-    margin: 0;
+.suggestion-item {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 16px;
+  list-style-type: none;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.suggestion-item:hover {
+  background-color: #e2e8f0; /* Change this to your desired hover color */
+  transform: scale(1.02);
+}
+
+.suggestion-text {
+  color: #475569;
+  font-family: 'Roboto';
+  font-size: 16px;
+  margin: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .suggestion-text {
+    font-size: 20px;
   }
-  
-  .list-item {
-    display: flex;
-    justify-content: space-between;
-    width: 300px;
-    margin: 0; /* Remove margin */
+}
+
+.arrow-button {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.arrow {
+  height: 16px;
+  width: 16px;
+}
+
+@media screen and (min-width: 768px) {
+  .arrow {
+    height: 24px;
+    width: 24px;
   }
-  
-  .search-arrow {
-    height: 20px;
-    width: 20px;
-    align-self: center;
-  }
-  
+}
