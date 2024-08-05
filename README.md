@@ -16,16 +16,19 @@ This repository contains a collection of simple React projects that serve as exa
 4. **Character Count App**
    - A simple app that returns the character count of your essays or any other text given to it.
 
-5. **Destination Search Engine**
+5. **Coin Toss App**
+   - An app that simply tosses the coin when you don't have one.
+  
+6. **Destination Search Engine**
    - An app containing a search engine that filters out destinations based on the user's type.
   
-6. **Gallery Framework**
+7. **Gallery Framework**
    - A simple app that provides a gallery interface where you can select an image from a bunch of thumbnails to display.
   
-7. **Google Search Engine**
+8. **Google Search Engine**
    - A clone of the Google Search Engine page consisting of a list of suggestions and autofill options.
      
-8. **Random Number Generator**
+9. **Random Number Generator**
    - An app that generates a random number between 1 and 100 every time you click the generate button.
 
 
