@@ -1,0 +1,131 @@
+.body-container {
+    max-width: 600px;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+    padding: 20px;
+  }
+  
+  .main-heading {
+    font-size: 2em;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .top-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .comment-form-container {
+    flex: 1;
+    margin-right: 20px;
+  }
+  
+  .comment-form-container .para {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+  }
+  
+  .input,
+  .input-comment {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .button:hover {
+    background-color: #0056b3;
+  }
+  
+  .cover-img {
+    max-width: 200px;
+    height: auto;
+  }
+  
+  .bottom-container {
+    margin-top: 20px;
+  }
+  
+  .bottom-container .para {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+  }
+  
+  .comment-count {
+    font-weight: bold;
+  }
+  
+  .comments-table {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .comment-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #f9f9f9;
+  }
+  
+  .comment-item .user-info {
+    display: flex;
+    align-items: center;
+  }
+  
+  .comment-item .user-info img {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+  }
+  
+  .comment-item .comment-content {
+    flex: 1;
+  }
+  
+  .comment-item .comment-content .user-name {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .comment-item .comment-content .comment-text {
+    margin-bottom: 5px;
+  }
+  
+  .comment-item .comment-actions {
+    display: flex;
+    align-items: center;
+  }
+  
+  .comment-item .comment-actions .like-button,
+  .comment-item .comment-actions .delete-button {
+    border: none;
+    background: none;
+    cursor: pointer;
+    margin-right: 5px;
+  }
+  
+  .comment-item .comment-actions .like-button img,
+  .comment-item .comment-actions .delete-button img {
+    width: 20px;
+    height: 20px;
+  }
