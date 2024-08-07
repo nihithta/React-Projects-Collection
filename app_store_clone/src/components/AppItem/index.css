@@ -1,0 +1,33 @@
+.project-item-container {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 200px;
+    text-align: center;
+    transition: transform 0.3s;
+  }
+  
+  .project-item-container:hover {
+    transform: scale(1.05);
+  }
+  
+  .project-item-image {
+    width: 100%;
+    height: auto;
+  }
+  
+  .project-item-details-container {
+    padding: 10px;
+  }
+  
+  .project-item-title {
+    font-size: 18px;
+    color: #333;
+    margin: 10px 0;
+  }
+  
+  .project-item-description {
+    font-size: 14px;
+    color: #777;
+  }

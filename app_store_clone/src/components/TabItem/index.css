@@ -1,0 +1,25 @@
+.tab-item-container {
+    margin-right: 10px;
+  }
+  
+  .tab-btn {
+    background-color: #f1f1f1;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition:
+      background-color 0.3s,
+      color 0.3s;
+  }
+  
+  .tab-btn:hover {
+    background-color: #e0e0e0;
+  }
+  
+  .active-tab-btn {
+    background-color: #007bff;
+    color: white;
+    font-weight: bold;
+  }

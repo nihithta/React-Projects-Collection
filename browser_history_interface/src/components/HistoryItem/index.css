@@ -1,0 +1,56 @@
+.history-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .list-item {
+    box-shadow: #333;
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 2px solid #ddd;
+    margin: 4px;
+  }
+  
+  .logo-image {
+    height: 32px;
+    width: 32px;
+    margin-right: 20px;
+    border-radius: 50%;
+  }
+  
+  .app-title {
+    flex: 1;
+    font-size: 16px;
+    color: #333;
+  }
+  
+  .list-item p {
+    margin: 0 10px 0 0;
+    color: #777;
+  }
+  
+  .list-item button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+  }
+  
+  .list-item button img {
+    height: 20px;
+    width: 20px;
+  }
+  
+  p {
+    color: #999;
+    text-align: center;
+  }
+  
+  .no-history {
+    text-align: center;
+    color: #999;
+    margin-top: 20px;
+  }
+  
