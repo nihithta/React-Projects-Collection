@@ -1,0 +1,72 @@
+/* index.css */
+.body-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(135deg, #72edf2 10%, #5151e5 100%);
+    padding: 20px;
+    font-family: 'Arial', sans-serif;
+    min-height: 100vh;
+  }
+  
+  h1 {
+    font-size: 32px;
+    color: #fff;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  
+  .review-container {
+    display: flex;
+    align-items: center;
+    background-color: rgba(200, 100, 100, 0.9);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    width: 75vw;
+  }
+  
+  .review-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 20px;
+  }
+  
+  .profile-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .heading {
+    font-size: 22px;
+    color: #0b0000;
+    margin-bottom: 5px;
+  }
+  
+  .para {
+    font-size: 16px;
+    color: #2b0000;
+    margin-bottom: 5px;
+    text-align: center;
+  }
+  
+  .arrow {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    opacity: 0.7;
+    transition: opacity 0.3s;
+  }
+  
+  .arrow:hover {
+    opacity: 1;
+  }
+  
+  
+  
+  
