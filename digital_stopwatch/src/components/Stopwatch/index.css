@@ -1,0 +1,122 @@
+.stopwatch-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Roboto', sans-serif;
+    background-color: #ffffff;
+    padding: 20px;
+  }
+  
+  .heading {
+    color: #333333;
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  
+  .stopwatch-card {
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 12px;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .timer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .stopwatch-icon {
+    width: 50px;
+    margin-bottom: 10px;
+  }
+  
+  .timer-label {
+    font-size: 18px;
+    color: #333333;
+  }
+  
+  .timer {
+    font-size: 48px;
+    color: #333333;
+    margin: 10px 0;
+  }
+  
+  .buttons-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    gap: 3px;
+  }
+  
+  .start-button {
+    background-color: #1db05f;
+    color: #ffffff;
+    border: none;
+    border-radius: 6px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .stop-button {
+    background-color: #ef0d36;
+    color: #ffffff;
+    border: none;
+    border-radius: 6px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .reset-button {
+    background-color: #eaa800;
+    color: #ffffff;
+    border: none;
+    border-radius: 6px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .stopwatch-background {
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-top: 20px;
+  }
+  
+  @media screen and (max-width: 575px) {
+    .stopwatch-background {
+      background-image: url('https://assets.ccbp.in/frontend/react-js/stopwatch-sm-bg.png');
+    }
+  }
+  
+  @media screen and (min-width: 576px) {
+    .stopwatch-background {
+      background-image: url('https://assets.ccbp.in/frontend/react-js/stopwatch-lg-bg.png');
+    }
+  }
+  
+  @media screen and (min-width: 768px) {
+    .stopwatch-background {
+      background-image: url('https://assets.ccbp.in/frontend/react-js/stopwatch-lg-bg.png');
+    }
+  }
+  
+  @media screen and (min-width: 992px) {
+    .stopwatch-background {
+      background-image: url('https://assets.ccbp.in/frontend/react-js/stopwatch-lg-bg.png');
+    }
+  }
+  
+  @media screen and (min-width: 1200px) {
+    .stopwatch-background {
+      background-image: url('https://assets.ccbp.in/frontend/react-js/stopwatch-lg-bg.png');
+    }
+  }
+  
