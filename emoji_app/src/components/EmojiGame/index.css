@@ -1,0 +1,31 @@
+.emoji-game-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .emoji-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    list-style-type: none;
+  }
+  
+  .emoji-game-body {
+    background: linear-gradient(to right, #9796f0, #fbc7d4);
+    min-height: 100vh;
+    min-width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .instruction-text {
+    font-family: Roboto;
+    color: white;
+    text-align: center;
+    font-size: 35px;
+  }
+  

@@ -1,0 +1,46 @@
+.coin-toss-container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(
+      to right,
+      #f9d423,
+      #e2a139
+    ); /* Your chosen color */
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .card-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ffffff; /* Your chosen color */
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .coin-image {
+    width: 150px; /* Adjust as necessary */
+    margin: 20px 0;
+  }
+  
+  .counts-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .toss-button {
+    background-color: #f9d423; /* Your chosen color */
+    color: #a35200; /* Text color */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  
+  
