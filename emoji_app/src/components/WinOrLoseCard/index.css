@@ -1,0 +1,50 @@
+.win-or-lose-card {
+    display: flex;
+    align-items: center;
+    background-color: #ffffff33;
+    border-radius: 15px;
+    padding: 30px;
+    width: 100%;
+    max-width: 700px;
+  }
+  
+  .sub {
+    text-align: center;
+  }
+  
+  .result-image {
+    width: 400px;
+    margin-bottom: 20px;
+  }
+  
+  .result-text {
+    font-size: 45px;
+    color: #ffffff;
+    margin-bottom: 10px;
+  }
+  
+  .score-text {
+    font-size: 30px;
+    color: #ffffff;
+  }
+  
+  .score-value {
+    font-size: 35px;
+    color: rgb(81, 81, 227);
+  }
+  
+  .play-again-button {
+    background-color: #ffce27;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 20px;
+    font-size: 16px;
+  }
+  
+  .play-again-button:hover {
+    background-color: #ffce27;
+  }
+  

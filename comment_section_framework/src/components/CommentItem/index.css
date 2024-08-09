@@ -1,0 +1,96 @@
+.amber {
+    background-color: #f59e0b;
+  }
+  
+  .blue {
+    background-color: #0b69ff;
+  }
+  
+  .orange {
+    background-color: #f97316;
+  }
+  
+  .emerald {
+    background-color: #10b981;
+  }
+  
+  .teal {
+    background-color: #14b8a6;
+  }
+  
+  .red {
+    background-color: #b91c1c;
+  }
+  
+  .light-blue {
+    background-color: #0ea5e9;
+  }
+  
+  /* Write your CSS here */
+  .comment-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #f9f9f9;
+  }
+  
+  .comment-item .user-info {
+    display: flex;
+    align-items: center;
+  }
+  
+  .comment-item .user-info .avatar {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    background-color: #007bff;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2em;
+    margin-right: 10px;
+  }
+  
+  .comment-item .comment-content {
+    flex: 1;
+  }
+  
+  .comment-item .comment-content .user-name {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .comment-item .comment-content .timestamp {
+    font-size: 0.8em;
+    color: #777;
+    margin-bottom: 5px;
+  }
+  
+  .comment-item .comment-content .comment-text {
+    margin-bottom: 5px;
+  }
+  
+  .comment-item .comment-actions {
+    display: flex;
+    align-items: center;
+  }
+  
+  .comment-item .comment-actions .like-button,
+  .comment-item .comment-actions .delete-button {
+    border: none;
+    background: none;
+    cursor: pointer;
+    margin-right: 5px;
+  }
+  
+  .comment-item .comment-actions .like-button img,
+  .comment-item .comment-actions .delete-button img {
+    width: 20px;
+    height: 20px;
+  }
+  
